@@ -1,0 +1,44 @@
+Rosbag validate result
+
+
+W0114 21:02:35.518353 14604 rosbag_validate_main.cc:103] frame_id base_footprint time 56375000000: IMU linear acceleration is 0.00189727 m/s^2, expected is [3, 30] m/s^2. (It should include gravity and be given in m/s^2.) linear_acceleration 000.00011532 0-0.00179486 -0.000604001
+W0114 21:02:35.518643 14604 rosbag_validate_main.cc:103] frame_id base_footprint time 56380000000: IMU linear acceleration is 3.16521e-10 m/s^2, expected is [3, 30] m/s^2. (It should include gravity and be given in m/s^2.) linear_acceleration 8.66737e-11 3.04275e-10 9.47208e-12
+W0114 21:02:35.518679 14604 rosbag_validate_main.cc:103] frame_id base_footprint time 56385000000: IMU linear acceleration is 3.21044e-10 m/s^2, expected is [3, 30] m/s^2. (It should include gravity and be given in m/s^2.) linear_acceleration 8.79751e-11 3.08621e-10 9.09082e-12
+E0114 21:02:35.586380 14604 rosbag_validate_main.cc:366] Average IMU linear acceleration is 0.139383 m/s^2, expected is [9.5, 10.5] m/s^2. Linear acceleration data should include gravity and be given in m/s^2.
+I0114 21:02:35.587353 14604 rosbag_validate_main.cc:399] Time delta histogram for consecutive messages on topic "/imu" (frame_id: "base_footprint"):
+Count: 31537  Min: 0.005  Max: 0.015  Mean: 0.00500137
+[0.005000, 0.006000)	####################	Count: 31529 (99.9746%)	Total: 31529 (99.9746%)
+[0.006000, 0.007000)	                    	Count: 0 (0%)	Total: 31529 (99.9746%)
+[0.007000, 0.008000)	                    	Count: 0 (0%)	Total: 31529 (99.9746%)
+[0.008000, 0.009000)	                    	Count: 0 (0%)	Total: 31529 (99.9746%)
+[0.009000, 0.010000)	                    	Count: 0 (0%)	Total: 31529 (99.9746%)
+[0.010000, 0.011000)	                    	Count: 7 (0.0221962%)	Total: 31536 (99.9968%)
+[0.011000, 0.012000)	                    	Count: 0 (0%)	Total: 31536 (99.9968%)
+[0.012000, 0.013000)	                    	Count: 0 (0%)	Total: 31536 (99.9968%)
+[0.013000, 0.014000)	                    	Count: 0 (0%)	Total: 31536 (99.9968%)
+[0.014000, 0.015000]	                    	Count: 1 (0.00317088%)	Total: 31537 (100%)
+E0114 21:02:35.587687 14604 rosbag_validate_main.cc:383] Point data (frame_id: "base_scan") has a large gap, largest is 0.211 s, recommended is [0.0005, 0.05] s with no jitter.
+I0114 21:02:35.587735 14604 rosbag_validate_main.cc:399] Time delta histogram for consecutive messages on topic "scan" (frame_id: "base_scan"):
+Count: 787  Min: 0.192  Max: 0.211  Mean: 0.200202
+[0.192000, 0.193900)	                    	Count: 1 (0.127065%)	Total: 1 (0.127065%)
+[0.193900, 0.195800)	                    	Count: 5 (0.635324%)	Total: 6 (0.762389%)
+[0.195800, 0.197700)	                    	Count: 13 (1.65184%)	Total: 19 (2.41423%)
+[0.197700, 0.199600)	                ####	Count: 172 (21.8551%)	Total: 191 (24.2694%)
+[0.199600, 0.201500)	       #############	Count: 509 (64.676%)	Total: 700 (88.9454%)
+[0.201500, 0.203400)	                   #	Count: 57 (7.24269%)	Total: 757 (96.1881%)
+[0.203400, 0.205300)	                   #	Count: 23 (2.92249%)	Total: 780 (99.1105%)
+[0.205300, 0.207200)	                    	Count: 5 (0.635324%)	Total: 785 (99.7459%)
+[0.207200, 0.209100)	                    	Count: 1 (0.127065%)	Total: 786 (99.8729%)
+[0.209100, 0.211000]	                    	Count: 1 (0.127065%)	Total: 787 (100%)
+I0114 21:02:35.587827 14604 rosbag_validate_main.cc:399] Time delta histogram for consecutive messages on topic "odom" (frame_id: "odom"):
+Count: 4731  Min: 0.024  Max: 0.042  Mean: 0.0333328
+[0.024000, 0.025800)	                    	Count: 1 (0.0211372%)	Total: 1 (0.0211372%)
+[0.025800, 0.027600)	                    	Count: 11 (0.232509%)	Total: 12 (0.253646%)
+[0.027600, 0.029400)	                    	Count: 42 (0.887762%)	Total: 54 (1.14141%)
+[0.029400, 0.031200)	                   #	Count: 167 (3.52991%)	Total: 221 (4.67132%)
+[0.031200, 0.033000)	                  ##	Count: 382 (8.0744%)	Total: 603 (12.7457%)
+[0.033000, 0.034800)	    ################	Count: 3696 (78.123%)	Total: 4299 (90.8687%)
+[0.034800, 0.036600)	                   #	Count: 347 (7.3346%)	Total: 4646 (98.2033%)
+[0.036600, 0.038400)	                    	Count: 62 (1.31051%)	Total: 4708 (99.5138%)
+[0.038400, 0.040200)	                    	Count: 19 (0.401606%)	Total: 4727 (99.9155%)
+[0.040200, 0.042000]	                    	Count: 4 (0.0845487%)	Total: 4731 (100%)
